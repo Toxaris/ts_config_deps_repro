@@ -1,0 +1,11 @@
+{
+  "name": "b",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ."
+  },
+  "devDependencies": {
+    "a": "workspace:*",
+    "@types/node": "18.11.13"
+  }
+}

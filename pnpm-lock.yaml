@@ -1,0 +1,39 @@
+lockfileVersion: 5.4
+
+importers:
+
+  .:
+    specifiers:
+      typescript: 4.9.3
+    devDependencies:
+      typescript: 4.9.3
+
+  a:
+    specifiers:
+      '@tsconfig/node18': 1.0.1
+    devDependencies:
+      '@tsconfig/node18': 1.0.1
+
+  b:
+    specifiers:
+      '@types/node': 18.11.13
+      a: workspace:*
+    devDependencies:
+      '@types/node': 18.11.13
+      a: link:../a
+
+packages:
+
+  /@tsconfig/node18/1.0.1:
+    resolution: {integrity: sha512-sNFeK6X2ATlhlvzyH4kKYQlfHXE2f2/wxtB9ClvYXevWpmwkUT7VaSrjIN9E76Qebz8qP5JOJJ9jD3QoD/Z9TA==}
+    dev: true
+
+  /@types/node/18.11.13:
+    resolution: {integrity: sha512-IASpMGVcWpUsx5xBOrxMj7Bl8lqfuTY7FKAnPmu5cHkfQVWF8GulWS1jbRqA934qZL35xh5xN/+Xe/i26Bod4w==}
+    dev: true
+
+  /typescript/4.9.3:
+    resolution: {integrity: sha512-CIfGzTelbKNEnLpLdGFgdyKhG23CKdKgQPOBc+OUNrkJ2vr+KSzsSV5kq5iWhEQbok+quxgGzrAtGWCyU7tHnA==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: true
