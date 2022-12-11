@@ -3,7 +3,13 @@
 Goal: Have a first-party package with a tsconfig.json extended by other packages
 in the monorepo. The shared tsconfig.json itself extends a tsconfig.json from NPM.
 
-Expectation: `bazel run //b` should work.
+Expected behavior: `bazel run //b` should work.
+
+Actual behavior:
+
+```
+b/node_modules/a/tsconfig.json(2,14): error TS6053: File '@tsconfig/node18' not found.
+```
 
 Note that the corresponding `pnpm` commands work fine:
 
