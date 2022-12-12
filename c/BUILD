@@ -17,8 +17,8 @@ ts_project(
     srcs = [
         "index.ts",
     ],
-    # this does not work :(
-    supports_workers = True,
+    # work around https://github.com/aspect-build/rules_ts/issues/271
+    supports_workers = False,
     tsconfig = ":tsconfig",
     deps = [
         ":node_modules/@types/node",
@@ -26,7 +26,7 @@ ts_project(
 )
 
 js_binary(
-    name = "b",
+    name = "c",
     data = [
         ":tsproject",
     ],
