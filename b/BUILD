@@ -18,6 +18,9 @@ ts_project(
         "index.ts",
     ],
     tsconfig = ":tsconfig",
+    deps = [
+        ":node_modules/@types/node",
+    ],
 )
 
 js_binary(
