@@ -11,7 +11,7 @@ importers:
   a:
     specifiers:
       '@tsconfig/node18': 1.0.1
-    devDependencies:
+    dependencies:
       '@tsconfig/node18': 1.0.1
 
   b:
@@ -34,7 +34,7 @@ packages:
 
   /@tsconfig/node18/1.0.1:
     resolution: {integrity: sha512-sNFeK6X2ATlhlvzyH4kKYQlfHXE2f2/wxtB9ClvYXevWpmwkUT7VaSrjIN9E76Qebz8qP5JOJJ9jD3QoD/Z9TA==}
-    dev: true
+    dev: false
 
   /@types/node/18.11.13:
     resolution: {integrity: sha512-IASpMGVcWpUsx5xBOrxMj7Bl8lqfuTY7FKAnPmu5cHkfQVWF8GulWS1jbRqA934qZL35xh5xN/+Xe/i26Bod4w==}

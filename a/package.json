@@ -1,6 +1,6 @@
 {
   "name": "a",
-  "devDependencies": {
+  "dependencies": {
     "@tsconfig/node18": "1.0.1"
   }
 }
